@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de login</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Mulish"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rokkitt"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="conteiner">
+        <div class="conteiner-login">
+          <div>
+            <a class="title">Log In</a>
+            <div>
+              <p class="p-login">
+                Log in to your account to upload or download <br />
+                pictures, videos or music.
+              </p>
+            </div>
+          </div>
+          <div>
+            <input
+              class="email-input"
+              placeholder="Enter your email address"
+              type="text"
+            />
+          </div>
+          <div class="buttons">
+            <a href="#" class="forgot-pass">Forgot password?</a>
+            <button class="button-proximo">
+              Next<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAX0lEQVRIie2VwQmAQAwEo0WoWI39nOUKp9WMj8vj3pKFQzIFzEDyWLPRAAqwqeQnjSqJAAtweeQB9oxk5AeRCSC81qhmdswieTzA2p3oDv1DylM+iNwD2sn0iG70v/ACbfdLjJ4cLaEAAAAASUVORK5CYII="/>
+            </button>
+          </div>
+          <hr class="linha" />
+          <div class="login-center">
+            <a>Or log in with</a>
+          </div>
+          <div class="login-rs">
+            <div class="login-redes">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA/wD/AP+gvaeTAAAEXElEQVRYhe2XS2xUVRjH/2fm0hlKacsUrKmJlT5ibTFxgyZkmqAxTRcaJQ51UxZIXIgJiQmIO5G4sES3GhMDicJmAEGNtiYoUVAWqBsRsUxb++DRhikzTJl25t57/i6m1XvnvofiQvk2N3OS85/f+R7n+w5wz/7jJu5kc9vhdK3QlO6QEBsk2QyijiQgkZXAOCAvhKI8k+pvuPWvAW4+TWV6ci5B4CWST5EIAwQJkOYvQEhSo8Q3BA5NxmLH0Cf0uwbYdTiXIDEgiRYjhBOczdoIpXh96tW1ny4rYFcyG2MxdJDEc1YI33DG3yeUUNWOiZ31N+8YsOuTbBtF6GsSLcsEt/RNSaB3ZlfjSMWAJbjwGZL3LzPc0vo1CtHtBukIuBjW83fBc+XrKRULGzOvrc/YcShOgIs5FxiuqUYg0R7FY/cpWFcdAgEUNCJTkBg4dxu/3VDLNdrCjHwEIOHbg51HclspkQwKt60zgjc3rYISsj90/xcZnBor2GqAYkt6d9PJ8j0Wqc2nqUDinaBwPc0rsD/uDAfAQ0MeQJJhT8DpyblE0HsOJPY+Ue19JbhoSLK9bvTKC+VbLDm42CECFURHLIzWesvh8cEveXw1soCCXoIbzWjuRSXkdgBJo4bp0C3J2boV80qaHu2rfG3rwxG892SNCW5otIDtX2aCVrxWJfKxG3s7cks6phCH8+F4UDiAWBO1BndwtFDJdaTktWjcqGMCFBSPVnLPRa3RxfU5PSgcSEAAG5wBBZsrOLWVDoCqV3yRP+QIKInVlZwa9oyVwIFErVHDVMWEBCk8hffHa7ClPfL3vohNiD9+dg00aSbvOTKD4bTmCFc6qTmfzYBS5PzmXF3E/darqRKmP5MEJrK6K1wpGtI0fZsBiT8rzTkvG89qWNCkKxxJEBhzBATlryXQynLOzS7Pat5wJQ9ecAQMreRZNQ8NhOKWzMlL8/h5uljq8QSeXh9Bb0vEKIX3f5rD5VkVSw4fTqt+CkUtrtR+cARM9TfcevDD9Lcge9wq7dyVIn6c+uf3umphARwamcf34wVHDbt1AKdg6CKAzbBA4qAbnK2wTcgDawCAlIfKdSyAk7HYMYApv8LONRMMjuRw8fc2y2vPOr31CZ2Qb/iHI2jjwoBwkIJ7cNT6ZrYdL6deaTxO4oTfscu5k/iDA3lU39f+uZ2G4/yrhKp2kEh5wTnx+YUjOawWQi87cTgCTuysvymBXhLXvPqzfZH4gruqSb0XA63ZwIAAMLOrcYRCdJNIebVAK6An3LAm9Tje7hizbPYLuASpYmEjieOOLdB2p3vOaYXQ415wgMu72GiLj+pEw7tXnwd5gGS70UNe45bxKpGCe/S37AvCzjw9aLT07qaTs80PPEIpXgQ4REJbbPBucCqAQUjZp15s7XSqVifz5UGT9Qk9W3p5JdcOXFqd16Px6zntmc/+yG9aVSVqBQRuF2WOxCAovyuicBb7uuYC/889+7/YXzzoxwCIfgvMAAAAAElFTkSuQmCC"/>
+              <a>Facebook</a>
+            </div>
+            <div class="login-redes">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA/wD/AP+gvaeTAAAFDElEQVRYhe2YbWxTVRjH/+f09rZ0rFvBjcEY3RAnDEc2UVlENiSREAeokCDBCfGDGAwfJEhENmOD0IBDyCAajUQWY4KAvMyFDRhCBsGhmDleAoPxVvY+Rse6jq3tvef4YQ7Xrre33TpMlP+3c87znPO7z8l9znMO8Fj/cZHBOPNcxIPRZbhPMiHz0ZAQCQYKAU7oiA06fhZ6tpNY0fjIAPl26GCjm9HCl6CWx0BWcaAAEshdxJKdMLI8YgEbMkD+If0c1/kHuMe1ofg91CjSiSRiJfnMGqxLUIB8A8y4SU+jhiUMCMxX48l1jODTyDbY1UxVAfl6IQt/yGVoG2DUlBRDujBRm0Gs7guBzISAcGuFWTgrH0MH14QVDgCMpAWiu1rNTDGCfBPG4TdSg1YuhpcMQCK9g2iWTHbApWaqHMErtAKtLDCcAMBMbRiBIphoEWTpAgAKt5CKB2wh7JgLG0vw+m+fpDYksmRigTuYb/EbQb6WWnGGfRzQM4nWIZm+SfKkXwOZ8U+ELNxiP8LG4kKF8wvIT0LAOaEBpVIMJAWPdM1BUiAvCHYRbgFFB92ISPZpKHD+AU+Ji8HJbjRyYI8HaOXeBs9qDpEC+Y1QFhmM+gOW644BeAUA4AFQLAGVfx8XSbSefM/GPio4oOcg+geuDFEAZj3s0AJYIACLtYCBAOPpkkcJB/j+xTrdS+Don/OeoUCieIBku06pTbhmh2XrQGFEeJoMOvex3OX5Vf4BOU9VTI2RfF8wi/xQu2DVQAEB4PX4o5kA5va2qfcwMSt6ElI5mIWDldMz3IvBB5BHKnpKroYhIfKRSxYi+rapkuG/JQ1lXvWi7xZ3KHoKujFDQuQjo9bp6Nv23eLbip4ynzokRD4SINd7t71ELvpzkkFwxGVeCVzbrbZATsKBbWo2FW1TV9xwmvX+xkaKdq+z3Sun8LMwwqW7hz7gdqZDvjMdV6RoLBJvZr2VfVE1FwbShq9XZ35zK6dc8lNiitSNz1I2jlq69GBLb5/XFpMMOACc6G1fkkxY5ZiOS5IJMgj+5CP2DAYOAH5vS9/rDw4AJkdda+0L1w+wR/w7DmB/93jkOabBznQPR6o9prgtJS/8PFC49wvyD59rmzJKaTwt6vIu377+gM3un77sTG0vfPA0ZD+nSrlr9Lytpc+HDLmiYEvxoYbZryqNx+ubPWLL1TxVQLIIsoG6titNxEFwojt+3kfFWQ17jk7KVAMrLEmbvqZ4ZqMnsm6uQPwVmD3Kiqn4wmLZ169WVLyT5B2eUVvlHhmwtBIIwyTt/dox1Fls4u4ig6arqlvUsO4u/ZQOrl3YxCLmXZZMCb07EdM5EhVX3kG7x+g1z3PRFxqL1+X4zbOKgCUlE8YWSUk36uWIsF6ajC4DblTn4M6Dnm8frb/rmW8qS7as2uQ3Bwe8F+8qTZtZ7o473sr0Yb12DmMCOmrmo9aZxF6LK5ttXbn+FyVb1Yv77iMpM467Eo43s2FhjaRZ09kd3zRxzrrlO8oD2QX19LG/ZMLY83LcmUrpiXHhgEvXttoyIuoysl++3aRmG9Lj0VeladYqd+zqBmYYUDQTBUd3KrVvfi+7yhKsT8jPb3v3ThbvDhetd2Tj21flqFiJB67YhhEJT2kczYna9sJ3HedzySLVB7vBAXrBnpwc19lFl7XAkOnhmngXp5EMnIrgzgiNZIvmrtMp9N63L86pU33Feqz/rf4C427G3Y18AEgAAAAASUVORK5CYII="/>
+                <a>Google</a>
+            </div>
+          </div>
+          <div class="login-center">
+            <p class="p-link">
+              Don’t have an account yet? <a href="#" class="sign-up">Sign up</a>
+            </p>
+          </div>
+        </div>
+        <div class="imagem-lateral">
+          <button class="close-button">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAlUlEQVRIie2UPQqAMAxGn97Bovc/iS7i36KDx6lLBRWVJFVw8JsKTb4XmjTw64uqgB5wihwHDEApCW4BD0xCiAuxHmgkgAwYQ8IMFIrYXAKQQszmEki0+R3kMfNV2yZOh7Nm0m61rVpVeRoBTSJyd3r1ic4aqvknavOrOzVEMopmiGbOTZAO+7JrJYAa27ruQ+6vj2kBkvdNfrIpLCQAAAAASUVORK5CYII="/> 
+          </button>
+          <img src="./img/agua.png" alt="agua" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
